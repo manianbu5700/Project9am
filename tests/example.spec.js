@@ -8,4 +8,6 @@ test('has title', async ({ page }) => {
   await expect(page).toHaveTitle(/Playwright/);
 });
 
-
+test('validate flipkart', async ({ page }) => {
+  await page.goto('https://www.flipkart.com')
+})
