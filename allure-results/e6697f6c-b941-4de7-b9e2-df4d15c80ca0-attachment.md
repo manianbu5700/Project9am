@@ -1,0 +1,189 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: Alert.spec.js >> Alert Handling
+- Location: tests\Alert.spec.js:3:5
+
+# Error details
+
+```
+Test timeout of 30000ms exceeded.
+```
+
+# Page snapshot
+
+```yaml
+- generic [active] [aria-hidden] [ref=e1]:
+  - banner [ref=e2]:
+    - generic [ref=e5]:
+      - link [ref=e7]:
+        - /url: http://www.automationtesting.in
+      - heading [level=1] [ref=e10]: Automation Demo Site
+    - navigation [ref=e11]:
+      - list [ref=e14]:
+        - listitem [ref=e15]:
+          - link [ref=e16]:
+            - /url: Index.html
+            - text: Home
+        - listitem [ref=e17]:
+          - link [ref=e18]:
+            - /url: Register.html
+            - text: Register
+        - listitem [ref=e19]:
+          - link [ref=e20]:
+            - /url: WebTable.html
+            - text: WebTable
+        - listitem [ref=e21]:
+          - link [ref=e22]:
+            - /url: SwitchTo.html
+            - text: SwitchTo
+          - generic [ref=e23]: 
+        - listitem [ref=e24]:
+          - link [ref=e25]:
+            - /url: Widgets.html
+            - text: Widgets
+          - generic [ref=e26]: 
+        - listitem [ref=e27]:
+          - link [ref=e28]:
+            - /url: Interactions.html
+            - text: Interactions
+          - generic [ref=e29]: 
+        - listitem [ref=e30]:
+          - link [ref=e31]:
+            - /url: SwitchTo.html
+            - text: Video
+          - generic [ref=e32]: 
+        - listitem [ref=e33]:
+          - link [ref=e34]:
+            - /url: WYSIWYG.html
+            - text: WYSIWYG
+          - generic [ref=e35]: 
+        - listitem [ref=e36]:
+          - link [ref=e37]:
+            - /url: "#"
+            - text: More
+          - generic [ref=e38]: 
+        - listitem [ref=e39]:
+          - link [ref=e40]:
+            - /url: http://practice.automationtesting.in/
+            - text: Practice Site
+  - generic [ref=e44]:
+    - list [ref=e46]:
+      - listitem [ref=e47]:
+        - link [ref=e48]:
+          - /url: "#OKTab"
+          - text: Alert with OK
+      - listitem [ref=e49]:
+        - link [ref=e50]:
+          - /url: "#CancelTab"
+          - text: Alert with OK & Cancel
+      - listitem [ref=e51]:
+        - link [ref=e52]:
+          - /url: "#Textbox"
+          - text: Alert with Textbox
+    - button [ref=e54] [cursor=pointer]: "click the button to display an alert box:"
+  - generic [ref=e56]:
+    - insertion [ref=e59]:
+      - generic [ref=e62]:
+        - heading [level=2] [ref=e64]: Discover more
+        - link [ref=e65] [cursor=pointer]:
+          - generic [ref=e66]: Automation Software Testing
+        - link [ref=e70] [cursor=pointer]:
+          - generic [ref=e71]: Test Automation Tools
+        - link [ref=e75] [cursor=pointer]:
+          - generic [ref=e76]: Alert Box Tutorials
+        - link [ref=e80] [cursor=pointer]:
+          - generic [ref=e81]: Confirm Box Examples
+        - link [ref=e85] [cursor=pointer]:
+          - generic [ref=e86]: Software Testing Services
+        - link [ref=e90] [cursor=pointer]:
+          - generic [ref=e91]: Automation Testing Training
+        - link [ref=e95] [cursor=pointer]:
+          - generic [ref=e96]: Automation Demo Access
+        - link [ref=e100] [cursor=pointer]:
+          - generic [ref=e101]: Register Automation Users
+    - insertion [ref=e107]:
+      - generic [ref=e110]:
+        - heading [level=2] [ref=e112]: Discover more
+        - link [ref=e113] [cursor=pointer]:
+          - generic [ref=e114]: Automation Testing Guide
+        - link [ref=e118] [cursor=pointer]:
+          - generic [ref=e119]: Try Cloud Tools
+        - link [ref=e123] [cursor=pointer]:
+          - generic [ref=e124]: Try Dev Tools
+        - link [ref=e128] [cursor=pointer]:
+          - generic [ref=e129]: Automated Testing Platforms
+        - link [ref=e133] [cursor=pointer]:
+          - generic [ref=e134]: Source Robotics
+        - link [ref=e138] [cursor=pointer]:
+          - generic [ref=e139]: Software Quality Assurance
+        - link [ref=e143] [cursor=pointer]:
+          - generic [ref=e144]: Automation Testing Resources
+        - link [ref=e148] [cursor=pointer]:
+          - generic [ref=e149]: Learn to Code
+    - insertion [ref=e155]:
+      - iframe [ref=e157]:
+        - generic [ref=f4e1]:
+          - generic [ref=f4e5]:
+            - link [ref=f4e6] [cursor=pointer]:
+              - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CZUHX-vPzaunJH-OKqfkPw8by4Q_B3ILligGBnIiYxRb4_r7Cjw4QASCPvrcvYOWS6IPYDqAB0qfFqT_IAQmpAk5QmleD3EY-qAMByAPLBKoE8gFP0GYNT_v32D8DziPd7ACyG9PBml95TCnjcfGBuR4EOALxAmYhBccvCQo8sHItYh9vutuMwk56zF6ATPkMdn8qPql8pRnPPVdKsmmHfGlQIBrJ-CZFtngJ1-_NRlP6WsZhmmcVLb2WC00_mKREQPW7_hJqTEzoMXBa-mFjtxu9cXS4vBoR_rZHxkVkse47g0xutZ6Kc8dS35jz7gpyHUxV637tM-05vILMhWQD9Em693s0hghAtYBZIoHHBdszRFb_fEqv797_XMnMW8R4CuDvGWdYmHA5pqbseADQWiZHTLqk4WjXYM6jza9ZnoGX5yabDcAE3baO0OQFiAWzv4-FW6AGLoAH0t-ViRqoB6nrsQKoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WKP1xOyO_5cDYAGxCcecqP6kXaNwgAoBmAsByAsBgAwBogwTKg4KDPbysQKO37ECleKxApABAaoNAklOyA0B6g0TCNKxxeyO_5cDFWNFKgkdQ6M8_IgOCbgT5APYEwOIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAD73QBIKNjYzODYzMzU0NxgBshgJEgLBXBguIgEA0BgBshkBN8IZAggB&gclid=EAIaIQobChMI6a7F7I7_lwMVY0UqCR1Dozz8EAEYASAAEgISyPD_BwE&num=1&cid=CAQSnwIAogo4dTC0KZ-zVM7qb67KST98bIAbXQ-VK3YH21QeNMqNHcbHMbS9SSRe_mE4DLBLWgNQ3x8LvyblAnUnlBRsD2dYKUkdZA2pyvyx3YUDuT9SacDgkFMrpNs_qpKSH2bjrNpDoE0ULb8GMVCiJfmJV7SczX6YEHyOT2WbYGJhbQBz2r5v8DOJuE7bAfNrlWv5WmZTnsaVmNbxC8BwnHCuG3Y6Ms81NcI1SAx4GYTquDqU6pHUAKOLHiAd12vd7G-J326p-8QuASyMp4lH-3BRFer8kIef0DJyc-EBj5XwsejU3prkMabiNKryq4wdvkatLAZISHdv-FZCeNcgGGifbx-oqpgO7V2Tv_F5oiVOZIR0NGxT8KxI7RXvLaxitRgB&sig=AOD64_06e3q5snt3b2KSVKI183klF5DDYQ&rf=1&nb=9&adurl=https://rbikehtahai.rbi.org.in/tamil/RBIREKYC.html%3Futm_source%3Dgoogle%26utm_medium%3Dgdn%26utm_campaign%3Dpd_google_gdn_rbi_kyc_nov_2026_tamil%26gad_source%3D5%26gad_campaignid%3D24438366131
+            - generic [ref=f4e8]:
+              - generic [ref=f4e9]:
+                - link "ரீ-கேஒய்சி" [ref=f4e11] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CZUHX-vPzaunJH-OKqfkPw8by4Q_B3ILligGBnIiYxRb4_r7Cjw4QASCPvrcvYOWS6IPYDqAB0qfFqT_IAQmpAk5QmleD3EY-qAMByAPLBKoE8gFP0GYNT_v32D8DziPd7ACyG9PBml95TCnjcfGBuR4EOALxAmYhBccvCQo8sHItYh9vutuMwk56zF6ATPkMdn8qPql8pRnPPVdKsmmHfGlQIBrJ-CZFtngJ1-_NRlP6WsZhmmcVLb2WC00_mKREQPW7_hJqTEzoMXBa-mFjtxu9cXS4vBoR_rZHxkVkse47g0xutZ6Kc8dS35jz7gpyHUxV637tM-05vILMhWQD9Em693s0hghAtYBZIoHHBdszRFb_fEqv797_XMnMW8R4CuDvGWdYmHA5pqbseADQWiZHTLqk4WjXYM6jza9ZnoGX5yabDcAE3baO0OQFiAWzv4-FW6AGLoAH0t-ViRqoB6nrsQKoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WKP1xOyO_5cDYAGxCcecqP6kXaNwgAoBmAsByAsBgAwBogwTKg4KDPbysQKO37ECleKxApABAaoNAklOyA0B6g0TCNKxxeyO_5cDFWNFKgkdQ6M8_IgOCbgT5APYEwOIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAD73QBIKNjYzODYzMzU0NxgBshgJEgLBXBguIgEA0BgBshkBN8IZAggB&gclid=EAIaIQobChMI6a7F7I7_lwMVY0UqCR1Dozz8EAEYASAAEgISyPD_BwE&num=1&cid=CAQSnwIAogo4dTC0KZ-zVM7qb67KST98bIAbXQ-VK3YH21QeNMqNHcbHMbS9SSRe_mE4DLBLWgNQ3x8LvyblAnUnlBRsD2dYKUkdZA2pyvyx3YUDuT9SacDgkFMrpNs_qpKSH2bjrNpDoE0ULb8GMVCiJfmJV7SczX6YEHyOT2WbYGJhbQBz2r5v8DOJuE7bAfNrlWv5WmZTnsaVmNbxC8BwnHCuG3Y6Ms81NcI1SAx4GYTquDqU6pHUAKOLHiAd12vd7G-J326p-8QuASyMp4lH-3BRFer8kIef0DJyc-EBj5XwsejU3prkMabiNKryq4wdvkatLAZISHdv-FZCeNcgGGifbx-oqpgO7V2Tv_F5oiVOZIR0NGxT8KxI7RXvLaxitRgB&sig=AOD64_06e3q5snt3b2KSVKI183klF5DDYQ&rf=1&nb=0&adurl=https://rbikehtahai.rbi.org.in/tamil/RBIREKYC.html%3Futm_source%3Dgoogle%26utm_medium%3Dgdn%26utm_campaign%3Dpd_google_gdn_rbi_kyc_nov_2026_tamil%26gad_source%3D5%26gad_campaignid%3D24438366131
+                - link "Reserve Bank Of India" [ref=f4e13] [cursor=pointer]:
+                  - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CZUHX-vPzaunJH-OKqfkPw8by4Q_B3ILligGBnIiYxRb4_r7Cjw4QASCPvrcvYOWS6IPYDqAB0qfFqT_IAQmpAk5QmleD3EY-qAMByAPLBKoE8gFP0GYNT_v32D8DziPd7ACyG9PBml95TCnjcfGBuR4EOALxAmYhBccvCQo8sHItYh9vutuMwk56zF6ATPkMdn8qPql8pRnPPVdKsmmHfGlQIBrJ-CZFtngJ1-_NRlP6WsZhmmcVLb2WC00_mKREQPW7_hJqTEzoMXBa-mFjtxu9cXS4vBoR_rZHxkVkse47g0xutZ6Kc8dS35jz7gpyHUxV637tM-05vILMhWQD9Em693s0hghAtYBZIoHHBdszRFb_fEqv797_XMnMW8R4CuDvGWdYmHA5pqbseADQWiZHTLqk4WjXYM6jza9ZnoGX5yabDcAE3baO0OQFiAWzv4-FW6AGLoAH0t-ViRqoB6nrsQKoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WKP1xOyO_5cDYAGxCcecqP6kXaNwgAoBmAsByAsBgAwBogwTKg4KDPbysQKO37ECleKxApABAaoNAklOyA0B6g0TCNKxxeyO_5cDFWNFKgkdQ6M8_IgOCbgT5APYEwOIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAD73QBIKNjYzODYzMzU0NxgBshgJEgLBXBguIgEA0BgBshkBN8IZAggB&gclid=EAIaIQobChMI6a7F7I7_lwMVY0UqCR1Dozz8EAEYASAAEgISyPD_BwE&num=1&cid=CAQSnwIAogo4dTC0KZ-zVM7qb67KST98bIAbXQ-VK3YH21QeNMqNHcbHMbS9SSRe_mE4DLBLWgNQ3x8LvyblAnUnlBRsD2dYKUkdZA2pyvyx3YUDuT9SacDgkFMrpNs_qpKSH2bjrNpDoE0ULb8GMVCiJfmJV7SczX6YEHyOT2WbYGJhbQBz2r5v8DOJuE7bAfNrlWv5WmZTnsaVmNbxC8BwnHCuG3Y6Ms81NcI1SAx4GYTquDqU6pHUAKOLHiAd12vd7G-J326p-8QuASyMp4lH-3BRFer8kIef0DJyc-EBj5XwsejU3prkMabiNKryq4wdvkatLAZISHdv-FZCeNcgGGifbx-oqpgO7V2Tv_F5oiVOZIR0NGxT8KxI7RXvLaxitRgB&sig=AOD64_06e3q5snt3b2KSVKI183klF5DDYQ&rf=1&nb=1&adurl=https://rbikehtahai.rbi.org.in/tamil/RBIREKYC.html%3Futm_source%3Dgoogle%26utm_medium%3Dgdn%26utm_campaign%3Dpd_google_gdn_rbi_kyc_nov_2026_tamil%26gad_source%3D5%26gad_campaignid%3D24438366131
+              - link [ref=f4e15] [cursor=pointer]:
+                - /url: https://www.googleadservices.com/pagead/aclk?sa=L&ai=CZUHX-vPzaunJH-OKqfkPw8by4Q_B3ILligGBnIiYxRb4_r7Cjw4QASCPvrcvYOWS6IPYDqAB0qfFqT_IAQmpAk5QmleD3EY-qAMByAPLBKoE8gFP0GYNT_v32D8DziPd7ACyG9PBml95TCnjcfGBuR4EOALxAmYhBccvCQo8sHItYh9vutuMwk56zF6ATPkMdn8qPql8pRnPPVdKsmmHfGlQIBrJ-CZFtngJ1-_NRlP6WsZhmmcVLb2WC00_mKREQPW7_hJqTEzoMXBa-mFjtxu9cXS4vBoR_rZHxkVkse47g0xutZ6Kc8dS35jz7gpyHUxV637tM-05vILMhWQD9Em693s0hghAtYBZIoHHBdszRFb_fEqv797_XMnMW8R4CuDvGWdYmHA5pqbseADQWiZHTLqk4WjXYM6jza9ZnoGX5yabDcAE3baO0OQFiAWzv4-FW6AGLoAH0t-ViRqoB6nrsQKoB6fMsQKoB-LYsQKoB6a-G6gHzM6xAqgH89EbqAeW2BuoB6qbsQKoB_7osQKoB47OG6gHk9gbqAfw4BuoB-6WsQKoB_6esQKoB6--sQKoB5_hsQKoB6brsQKoB9XJG6gH2baxAqgHmgaoB_-esQKoB9-fsQKoB_jCsQKoB_vCsQLYBwDSCDMIgGEQARifAzIIioKAgICAgAg6D4BAgMCAgICAqIACqIOAGEi9_cE6WKP1xOyO_5cDYAGxCcecqP6kXaNwgAoBmAsByAsBgAwBogwTKg4KDPbysQKO37ECleKxApABAaoNAklOyA0B6g0TCNKxxeyO_5cDFWNFKgkdQ6M8_IgOCbgT5APYEwOIFAHQFQGYFgHKFgIKAPgWAYAXAbIXEBgBKgo2NjM4NjMzNTQ3UAa6FwI4AaoYFwkAAAAAAD73QBIKNjYzODYzMzU0NxgBshgJEgLBXBguIgEA0BgBshkBN8IZAggB&gclid=EAIaIQobChMI6a7F7I7_lwMVY0UqCR1Dozz8EAEYASAAEgISyPD_BwE&num=1&cid=CAQSnwIAogo4dTC0KZ-zVM7qb67KST98bIAbXQ-VK3YH21QeNMqNHcbHMbS9SSRe_mE4DLBLWgNQ3x8LvyblAnUnlBRsD2dYKUkdZA2pyvyx3YUDuT9SacDgkFMrpNs_qpKSH2bjrNpDoE0ULb8GMVCiJfmJV7SczX6YEHyOT2WbYGJhbQBz2r5v8DOJuE7bAfNrlWv5WmZTnsaVmNbxC8BwnHCuG3Y6Ms81NcI1SAx4GYTquDqU6pHUAKOLHiAd12vd7G-J326p-8QuASyMp4lH-3BRFer8kIef0DJyc-EBj5XwsejU3prkMabiNKryq4wdvkatLAZISHdv-FZCeNcgGGifbx-oqpgO7V2Tv_F5oiVOZIR0NGxT8KxI7RXvLaxitRgB&sig=AOD64_06e3q5snt3b2KSVKI183klF5DDYQ&rf=1&nb=8&adurl=https://rbikehtahai.rbi.org.in/tamil/RBIREKYC.html%3Futm_source%3Dgoogle%26utm_medium%3Dgdn%26utm_campaign%3Dpd_google_gdn_rbi_kyc_nov_2026_tamil%26gad_source%3D5%26gad_campaignid%3D24438366131
+          - generic [ref=f4e19] [cursor=pointer]
+          - button [ref=f4e24] [cursor=pointer]
+          - iframe
+    - insertion [ref=e160]:
+      - generic [ref=e163]:
+        - heading [level=2] [ref=e165]: Discover more
+        - link [ref=e166] [cursor=pointer]:
+          - generic [ref=e167]: Find Tech Guides
+        - link [ref=e171] [cursor=pointer]:
+          - generic [ref=e172]: Automation Consulting Service
+        - link [ref=e176] [cursor=pointer]:
+          - generic [ref=e177]: Software Test Plans
+        - link [ref=e181] [cursor=pointer]:
+          - generic [ref=e182]: Home Automation Solutions
+        - link [ref=e186] [cursor=pointer]:
+          - generic [ref=e187]: JavaScript Alert Boxes
+        - link [ref=e191] [cursor=pointer]:
+          - generic [ref=e192]: Compare Broadband
+        - link [ref=e196] [cursor=pointer]:
+          - generic [ref=e197]: Performance Testing Solutions
+        - link [ref=e201] [cursor=pointer]:
+          - generic [ref=e202]: Regression Testing Services
+    - contentinfo [ref=e207]:
+      - generic [ref=e209]:
+        - generic [ref=e210]:
+          - text: "\"@ 2016\""
+          - link [ref=e211]:
+            - /url: "#"
+            - text: Automation Testing
+          - text: "\"All Rights Reserved.\""
+        - generic [ref=e212]:
+          - link [ref=e213]:
+            - /url: https://www.facebook.com/automationtesting2016/
+            - generic [ref=e214]: 
+          - link [ref=e215]:
+            - /url: https://twitter.com/krishnasakinala
+            - generic [ref=e216]: 
+          - link [ref=e217]:
+            - /url: https://www.linkedin.com/nhome/?trk=hb_signin
+            - generic [ref=e218]: 
+          - link [ref=e219]:
+            - /url: https://plus.google.com/105286300926085335367
+            - generic [ref=e220]: 
+          - link [ref=e221]:
+            - /url: https://www.youtube.com/channel/UCmQRa3pWM9zsB474URz8ESg
+            - generic [ref=e222]: 
+```
