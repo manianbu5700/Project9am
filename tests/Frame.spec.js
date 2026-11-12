@@ -3,7 +3,7 @@ import { test } from '@playwright/test'
 test('Frame Handling', async ({ page }) => {
     await page.goto('https://demo.automationtesting.in/Frames.html')
     const singleFrame = await page.frameLocator('//iframe[@id="singleframe"]')
-    await singleFrame.locator('//input[@type="text"]').fill("Hii Buddy")
+    await singleFrame.locator('//input[@type="text"]').fill("Hii Dude")
     // await page.waitForTimeout(3000)
 
     await page.locator('(//a[@class="analystic"])[2]').click() //Show Frame Button
